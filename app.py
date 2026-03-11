@@ -4,7 +4,7 @@ import mysql.connector
 def get_connection():
     return mysql.connector.connect(
         host="localhost",
-        user="root",
+        user="root", # <-- replace with your MySQL  user
         password="Root",  # <-- replace with your MySQL password
         database="student_management"
     )
@@ -122,3 +122,4 @@ def delete_student():
 
 # Start the program
 login()
+
