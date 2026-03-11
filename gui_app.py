@@ -7,8 +7,8 @@ import random
 def db_connection():
     return mysql.connector.connect(
         host="localhost",
-        user="root",
-        password="Root",
+        user="root",     # <-- replace with your MySQL User
+        password="Root", # <-- replace with your MySQL password
         database="student_management"
     )
 
@@ -373,5 +373,6 @@ if __name__ == "__main__":
     ctk.set_default_color_theme("blue")
     app = StudentApp()
     app.mainloop()
+
 
 
