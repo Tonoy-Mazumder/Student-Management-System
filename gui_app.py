@@ -3,14 +3,6 @@ from tkinter import messagebox
 import mysql.connector
 import random
 
-# ---------- DATABASE CONNECTION ----------
-def db_connection():
-    return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Root",
-        database="student_management"
-    )
 
 # ---------- PARTICLE CLASS ----------
 class Particle:
@@ -373,3 +365,4 @@ if __name__ == "__main__":
     ctk.set_default_color_theme("blue")
     app = StudentApp()
     app.mainloop()
+
